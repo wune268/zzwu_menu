@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ZWTabBarController.h"
+#import "ZWNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    window.rootViewController = [[ZWTabBarController alloc] init];
+    window.backgroundColor = [UIColor whiteColor];
+    self.window = window;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

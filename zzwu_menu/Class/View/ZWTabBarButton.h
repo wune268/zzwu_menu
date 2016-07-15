@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZWTabBarButton.h
 //  zzwu_menu
 //
 //  Created by zzwu on 16/7/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ZWTabBarButton : UIButton
 
+@property(nonatomic, weak)UITabBarItem *item;
 
 @end
-
